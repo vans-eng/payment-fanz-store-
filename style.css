@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(135deg, #ff6b6b, #feca57);
+    color: white;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    opacity: 0.9;
+    font-size: 1rem;
+}
+
+.payment-tabs {
+    display: flex;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.tab-btn img {
+    width: 35px;
+    height: 35px;
+}
+
+.tab-btn.active {
+    background: white;
+    border-bottom: 3px solid #667eea;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.tab-content {
+    display: none;
+    padding: 30px 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.qr-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.qr-code {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.qr-code img {
+    max-width: 250px;
+    height: 250px;
+}
+
+.payment-info {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.payment-info h3 {
+    color: #667eea;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.payment-info p {
+    margin-bottom: 8px;
+    font-size: 1rem;
+}
+
+.payment-info strong {
+    color: #333;
+}
+
+.instructions {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 4px solid #667eea;
+}
+
+.instructions h4 {
+    color: #667eea;
+    margin-bottom: 15px;
+}
+
+.instructions ol {
+    padding-left: 20px;
+}
+
+.instructions li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.status {
+    text-align: center;
+    padding: 20px;
+    background: #fff3cd;
+    border-top: 1px solid #ffeaa7;
+    color: #856404;
+}
+
+.status i {
+    color: #f39c12;
+    margin-right: 8px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .qr-code img {
+        max-width: 220px;
+        height: 220px;
+    }
+  }
