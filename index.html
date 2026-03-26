@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Manual - QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-qrcode"></i> Scan QR Code Pembayaran</h1>
+            <p>Pilih metode pembayaran dan scan QR Code di aplikasi e-wallet Anda</p>
+        </header>
+
+        <div class="payment-tabs">
+            <button class="tab-btn active" data-tab="dana">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/DANA_logo_2020.svg/512px-DANA_logo_2020.svg.png" alt="DANA">
+                DANA
+            </button>
+            <button class="tab-btn" data-tab="gopay">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/GoPay_logo_2018.svg/512px-GoPay_logo_2018.svg.png" alt="GoPay">
+                GoPay
+            </button>
+            <button class="tab-btn" data-tab="ovo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/OVO_logo_2019.svg/512px-OVO_logo_2019.svg.png" alt="OVO">
+                OVO
+            </button>
+        </div>
+
+        <div class="payment-content">
+            <!-- DANA -->
+            <div id="dana" class="tab-content active">
+                <div class="qr-container">
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=081234567890-DANA-50000-Rp50.000" alt="QR DANA">
+                    </div>
+                    <div class="payment-info">
+                        <h3>DANA</h3>
+                        <p><strong>No. HP:</strong> 0812-3456-7890</p>
+                        <p><strong>Nominal:</strong> Rp 50.000</p>
+                        <p><strong>Keterangan:</strong> Order #12345</p>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h4>Cara Bayar:</h4>
+                    <ol>
+                        <li>Buka aplikasi DANA</li>
+                        <li>Scan QR Code di atas</li>
+                        <li>Masukkan PIN DANA Anda</li>
+                        <li>Konfirmasi pembayaran</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- GoPay -->
+            <div id="gopay" class="tab-content">
+                <div class="qr-container">
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=081234567890-GoPay-50000-Rp50.000" alt="QR GoPay">
+                    </div>
+                    <div class="payment-info">
+                        <h3>GoPay</h3>
+                        <p><strong>No. HP:</strong> 0812-3456-7890</p>
+                        <p><strong>Nominal:</strong> Rp 50.000</p>
+                        <p><strong>Keterangan:</strong> Order #12345</p>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h4>Cara Bayar:</h4>
+                    <ol>
+                        <li>Buka aplikasi GoPay</li>
+                        <li>Scan QR Code di atas</li>
+                        <li>Masukkan PIN GoPay Anda</li>
+                        <li>Konfirmasi pembayaran</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- OVO -->
+            <div id="ovo" class="tab-content">
+                <div class="qr-container">
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=081234567890-OVO-50000-Rp50.000" alt="QR OVO">
+                    </div>
+                    <div class="payment-info">
+                        <h3>OVO</h3>
+                        <p><strong>No. HP:</strong> 0812-3456-7890</p>
+                        <p><strong>Nominal:</strong> Rp 50.000</p>
+                        <p><strong>Keterangan:</strong> Order #12345</p>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h4>Cara Bayar:</h4>
+                    <ol>
+                        <li>Buka aplikasi OVO</li>
+                        <li>Scan QR Code di atas</li>
+                        <li>Masukkan PIN OVO Anda</li>
+                        <li>Konfirmasi pembayaran</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="status">
+            <p><i class="fas fa-clock"></i> Pembayaran akan diverifikasi dalam 5 menit</p>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+                  </html>
